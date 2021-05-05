@@ -1,6 +1,13 @@
 again = ""
 while again != "n":
-    size = int(input("What will be the size of your grid?"))
+    error = "yes"
+    while error == "yes":
+        try:
+            size = int(input("What will be the size of your grid? "))
+            error = "no"
+        except ValueError:
+            print("Integer Only!")
+            
     array = []
     for i in range(0,size):
         array.append([])
@@ -23,4 +30,4 @@ while again != "n":
             print(array[i][ii], end=" ")
         print("")
     
-    again = input("Would you like to go again?")
+    again = input("Would you like to go again? y/n ")
