@@ -17,6 +17,7 @@ while again == "y":
         for i in range (1,count2+1):
             print(count, end=" ")
             count += 1
+        print("")
 
     again = input("Again? y/n")
     
