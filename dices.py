@@ -1,12 +1,15 @@
 Alpha = "abcdefghijklmnopqrstuvwxyz"
 x = 1
-while x:
-    option = ""
-    for i in range(0,26):
-        for y in range(0,x):
-            option = option + Alpha[i]
-    print("")
-    print(option)
-    x+=1
-    if x >3:
-        break
+for i in range(0,x):
+    print(26**x)
+    for i in range(26**x,0,-1):
+        remainders = []
+        number = i
+        while number > 0:
+            remainders.append(number%26)
+            number = int((number-(number%26))/26)
+
+
+        for i in range(0,len(remainders)):
+            print(Alpha[remainders[i]-1])
+
