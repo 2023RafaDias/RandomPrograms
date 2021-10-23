@@ -10,6 +10,6 @@ for i in range(0,x):
             number = int((number-(number%26))/26)
 
 
-        for i in range(0,len(remainders)):
-            print(Alpha[remainders[i]-1])
+        for i in range(len(remainders)-1,-1,-1):
+                print(Alpha[remainders[i]-1])
 
