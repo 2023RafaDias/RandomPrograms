@@ -1,0 +1,6 @@
+C = int(input())
+L = int(input())
+type2 = (2*(L-1)) + (2*(C-1))
+type1 = (C*L) + ((L-1)*(C-1))
+print(type1)
+print(type2)
