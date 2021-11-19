@@ -18,5 +18,16 @@ def fibonacci(n):
         n = fibonacci(n-1)+fibonacci(n-2)
         return n
 
+#n = int(input())
+#print(fibonacci(n))
+
+def add(n):
+    if n == 1:
+        return 1
+    else:
+        n = add(n-1) + n
+        return n
+
 n = int(input())
-print(fibonacci(n))
+print(add(n))
+
