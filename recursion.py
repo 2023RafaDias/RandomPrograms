@@ -28,6 +28,6 @@ def add(n):
         n = add(n-1) + n
         return n
 
-n = int(input())
-print(add(n))
+#n = int(input())
+#print(add(n))
 
