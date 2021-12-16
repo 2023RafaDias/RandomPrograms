@@ -18,6 +18,12 @@ def fibonacci(n):
         n = fibonacci(n-1)+fibonacci(n-2)
         return n
 
+count = 1
+while True:
+    print(fibonacci(count))
+    count+=1
+
+
 #n = int(input())
 #print(fibonacci(n))
 
